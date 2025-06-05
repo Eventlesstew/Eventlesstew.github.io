@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PAC MAN SCRATCHED CHANGELOG</title>
+    </head>
+
+    <body>
+        <script type="text/javascript" src="/index.js"></script>
+
+        <div>
+            <h2>v2.8.1.1</h2>
+            <p>Changed update format from STAGE.MAJOR.MINOR to STAGE.MAJOR.MINOR.PATCH</p>
+            <ul>
+                <li>A certain easter egg can no longer be triggered when in the middle of a game.</li>
+                <li>Changed Atari Pac-Man's jump and land sounds.</li>
+            </ul>
+        </div>
+        <div>
+            <h2>v2.8.1</h2>
+            <p>
+                I wanted to make v2.8.1 a few days after v2.8 came out, but there was wayyyy 
+                too much important stuff in my way which led to this “quick” hotfix update 
+                being held back, much to my annoyance.</p>
+            <p>
+                This hotfix adds more things to the massive refinement pile of v2.8, along with
+                fixing bugs & oversights I missed and changing certain features in preparation for v2.9.
+            </p>
+
+            <h3>MENU CHANGES</h3>
+            <ul>
+                <li>
+                    Clyde Swap is now disabled when using the Atari Game Style or Punky's 
+                    Revenge Gamemode, since Clyde or his replacements are not present.
+                </li>
+                <li>
+                    Cutscenes are disabled in the Atari and Pac-Mania Game Styles
+                    since they do not have cutscenes.
+                </li>
+                <li>
+                    Removed the exclamation marks from settings that disable certain others,
+                    will work out a better way to notify people of why certain settings are
+                    disabled in v2.9.
+                </li>
+            </ul>
+            
+            <h3>GAMEPLAY CHANGES</h3>
+            <ul>
+                <li>Punky has been given some adjustments.</li>
+                <li>
+                    Readjusted ghost speeds in the Mania Game Style. Everyone is basically down a level.
+                    <ul>
+                        <li>Blinky and Punky: Very Fast to Fast</li>
+                        <li>Pinky and Sue: Fast to Medium</li>
+                        <li>Inky, Clyde and Funky: Slow</li>
+                        <li>Spunky: Slow to Very slow</li>
+                    </ul>
+                </li>
+            </ul> 
+
+            <h3>SOUND CHANGES</h3>
+            <ul>
+                <li>Fruits now have a different spawn sound in Atari Fruit Chase</li>
+                <li>Extend Sounds are now tied to characters.</li>
+                <li>Gave the car a super dot sound.</li>
+                <li>Taizo Hori now plays his theme when getting dots.</li>
+                <li>If the Dug Naissance music is chosen with Taizo Hori, the music will be quieter when Taizo isn't getting Dots.</li>
+                <li>Mappy now has a new dot eating sound.</li>
+                <li>The Wafer Dot Shape now affects Super Dots</li>
+            </ul>
+            <h3>OTHER CHANGES</h3>
+            <ul>
+                <li>Added a new way to trigger an easter egg after the old method was removed in the Credits rework.</li>
+            </ul>
+
+            <h3>BUG FIXES</h3>
+            <ul>
+                <li>Fixed some dot shape and Pac-Man's Park related issues.</li>
+                <li>Fixed Power Pellets not blinking if the Dot Shape is Wafers.</li>
+                <li>
+                    The Exclamation mark removal also fixed the erroneous exclamation marks being on the
+                    Randomiser, even though it didn't randomise the Dot Shapes anymore.
+                </li>
+                <li>Fixed Power Pellets sometimes showing up in intermissions. (Which didn't work...)</li>
+                <li>The additional Invisible Eat Sounds should be able to play now.</li>
+                <li>Fixed the “Ready” and “Player One” text not appearing properly.</li>
+                <li>Fixed Pac-Man not jumping properly when he isn't moving.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.8</h2>
+
+            <h3>QUICK RUNDOWN</h3>
+            <ul>
+                <li>Three new playable characters from Rally X, Dig Dug and Mappy respectively.</li>
+                <li>Speed is no longer impacted by FPS.</li>
+                <li>Added the remaining cutscenes for Jr. Pac-Man.</li>
+                <li>Moved all credits to a section in the ingame menu.</li>
+                <li>Changes to Punky's Revenge</li>
+                <li>Infinite Lives</li>
+                <li>Invisible Dot Shape</li>
+                <li>Separated Dot Shape Randomisation from the Randomiser.</li>
+                <li>Random Carousel Rework</li>
+                <li>Better Infinite Life handling in Editor</li>
+                <li>Rework made to Atari-style sprites.</li>
+                <li>QoL improvements</li>
+                <li>Bug Fixes</li>
+            </ul>
+
+            <h3>JR PAC-MAN CUTSCENE UPDATE</h3>
+            <ul>
+                <li>The second and third cutscenes from Jr. Pac-Man have been added!</li>
+                <li>Remastered versions only include reskins for now, but enhancements are yet to come.</li>
+            </ul>
+
+            <h3>THREE NEW CHARACTERS</h3>
+            <p>Added three new playable characters, I hope you enjoy playing as them.</p>
+            <ul>
+                <li>The Car from New Rally-X.</li>
+                <li>The main character of Dig Dug, Taizo Hori!</li>
+                <li>Mappy from Mappy.</li>
+            </ul>
+
+            <h3>NEW SETTINGS</h3>
+            <ul>
+                <li>INFINITE LIVES - 
+                    You can now set Lives to be infinite, which is helpful for inexperienced players to enjoy the game
+                    or simply for praciticing certain parts of the game. Using this option disables Extend Threshold,
+                    since there is no point in increasing infinity by one.
+                </li>
+                <li>RANDOM MUSIC - 
+                    Music can now be set to “Random” which randomises the music per level.
+                </li>
+                <li>RANDOM DOT SHAPES - 
+                    Dot Shapes are no longer randomised by the Randomiser Maze, but instead
+                    through their own Random setting. This means that the Randomiser Maze doesn't override this
+                    setting anymore.
+                </li>
+                <li>INVISIBLE DOT SHAPES -
+                    For Pac-Maniacs, The dot shape can also be set to Invisible, I hope memory serves you well!
+                </li>
+            </ul>
+            <h3>MENU CHANGES</h3>
+            <ul>
+                <li>
+                    Added Infoboxes within the Settings menu! They are distinguished through a different font,
+                appear below the usual game settings and rather than changing the game in some way,
+                they are purely for containing some fun information about Pac-Man Scratched.
+                </li>
+                <li>
+                    The Credits have been moved to it's own section in the settings. This includes the bottom
+                    right text and the full credits from project descriptions. This gives me an easier time
+                    managing everything.
+                </li>
+                <li>
+                    Added a new sound for scrolling through the menu, taken from DasScheit's Pac-Man remake.
+                    (Not sure where the original sound came from though)
+                </li>
+                <li>
+                    Changed the Mazes description and Maze Workshop's preview to better indicate where the Maze Editor is.
+                </li>
+                <li>
+                    The Lives description has similarly been changed to tell the player how to exit out of a game,
+                    which is useful if they set the lives to Infinite.
+                </li>
+                <li>
+                    Reworked random setting carousel. Not only does it work better, it now works for other things such as Random Chaos.
+                </li>
+                <li>
+                    Rewrote Offset Bug's description to be more clearer plus fix some typos. 
+                    (The latter was the primary intention, but I did the former bc why not :D
+                </li>
+            </ul>
+
+            <h3>EDITOR CHANGES</h3>
+            <p>Reworked how lives are handled in the Editor.</p>
+            <ul>
+                <li>
+                    When you start playing a maze, your lives are finite,
+                    but they will be set to infinite when opening up the
+                    editor, even when going back to playtesting.
+                </li>
+                <li>
+                    This allows lives to keep their finite nature when playing other people's mazes,
+                    but when using the Editor, they will be kept infinite to prevent too many unfortunate
+                    mishaps from kicking you back to the menu with your progress being lost.
+                </li>
+                <li>
+                    “But Event, can't they just open and close the editor to get infinite lives and cheese my maze?”
+                    They can also set it to infinite in the settings. >:) 
+                </li>
+            </ul>
+
+            <h3>GAMEPLAY CHANGES</h3>
+            <ul>
+                <li>More changes have been made to Punky, but I was threatened with my game being flooded with AtBelch's propaganda if I listed them.</li>
+                <li>Fully reworked Ghost movement again.</li>
+                <li>Finally found a good solution to the FPS-related issues plaguing the game's speed for way too long!</li>
+                <li>Removed the blue from the Tods (Atari Ghosts), Atari Pac-Man and Atari-style Miru.</li>
+                <li>
+                    If the lives are set to Infinite through the Settings or the Editor, the lives bar now has the infinity
+                    symbol next to a single life icon to indicate this. (Based on the one from Undertale)
+                </li>
+                <li>The Invisible character now has a life icon, making it clearer how many lives it has.</li>
+                <li>More funny sounds have been added to the Invisible character's arsenal of eat sounds.</li>
+                <li>Each ghost now has a different speed value in the Mania Game Style.
+                    <ul>
+                        <li>Very Fast: Blinky, Punky</li>
+                        <li>Fast: Pinky, Sue</li>
+                        <li>Normal: Inky, Clyde, Funky</li>
+                        <li>Slow: Spunky</li>
+                    </ul>
+                    This change generally makes the game style a bit harder, but Spunky getting a speed nerf should make her easier to deal with.
+                </li>
+                <li>Remaining dots no longer disappear when Pac-Man eats the fruit in Fruit Chase.
+                    <ul>
+                        <li>This was done to fix a bug that impacted the Editor.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>OTHER CHANGES</h3>
+            <ul>
+                <li>Pressing F will now show the frames per second on the bottom right.</li>
+            </ul>
+
+            <h3>BUGS FIXED</h3>
+            <ul>
+                <li>Punky had some bugs, so they were fixed.</li>
+                <li>Tim now keeps his black eyes when eaten.</li>
+                <li>As stated in Gameplay changes, the FPS issues impacting the game's speed has been fixed.</li>
+                <li>Fixed the Mania Ghost Siren grinding people's ears.</li>
+                <li>Fixed the Atari Style Game Over screen not looking right.</li>
+                <li>Fixed options still being darkened when opting out of gamemodes that override these settings.</li>
+                <li>Fixed Cornering not working when moving southwest.</li>
+                <li>Removed Herobrine</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.7.4</h2>
+            <ul>
+                <li>Removed three stray dots in the top right corner of Junior Jumble 2 which made the maze impossible to beat.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.7.3</h2>
+            <ul>
+                <li>ADDED THE FIRST CUTSCENE FOR JR PAC-MAN!</li>
+                <li>The remaining cutscenes and their remastered versions will come in future updates.</li>
+                <li>
+                    Fixed weird fruit behaviour in the Maze Workshop. (MPM Game Style) Now it works
+                    under a different system that should replicate the original behaviour well.
+                </li>
+                <li>Fixed incorrect colours showing up in Mania Mashup.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.7.2</h2>
+            <p>Bug fixes, Movement optimizations and added some new parts in the Maze Editor!</p>
+            <ul>
+                <li>
+                    Reworked the entire movement system to make it so Pac-Man doesn't wait until a full tile to turn. 
+                    This should make controlling Pac-Man much better than before
+                </li>
+                <li>Added elements from that one Tengen maze into the Maze Editor.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.7.1</h2>
+            <p>Changed Maze Editor text to show how to start a new project.</p>
+        </div>
+
+        <div>
+            <h2>v2.7</h2>
+            <p>HAPPY APRIL FOOLS!</p>
+            <p>This is not the fool you're looking for, but I have other plans in mind.</p>
+
+            <h3>BAD NEWS FIRST</h3>
+            <p>
+                I'm sorry mobile Scratchers, but unfortunately, I had to remove Mobile Controls.
+                They were way too janky.
+            </p>
+            <p>With that out of the way, I suppose it's time to unveil my greatest work yet…</p>
+
+            <h3>THE MAZE EDITOR IS BACK!!!</h3>
+            <p>The Maze Editor has returned as the Maze Workshop, found in the Maze setting.</p>
+            <p>
+                Fun fact: There was a Maze editor in Pac-Man Scratched since the very beginning,
+                which is how I managed to recreate all of the mazes you love. Now it has been
+                polished for players to use as well.
+            </p>
+
+            <p>I should also mention the differences from the old, separate, bad Maze Editor project too.</p>
+            <ul>
+                <li>NO MORE LAG! - The Maze Editor has now been optimised to run much greater than 5 FPS.</li>
+                <li>Actually useful guides - Now there's a proper UI showing you what you can do.</li>
+                <li>A different way to export - Instead of remixing the project, you now just Press “T” and show off your maze to others!</li>
+                <li>
+                    Infinite Lives! - This should help when editing mazes by preventing Game Over's from ruining your work,
+                    or if you're trying to beat someone's near-impossible Maze. Remember, you can go back to the menu by
+                    clicking the Green Flag.
+                </li>
+            </ul>
+
+            <h3>NEW MUSIC!</h3>
+            <ul>
+                <li>Outward - Pac-Land Music is here!</li>
+                <li>Toc Man's Lair - Fitting for a showdown with Punky or for another tough challenge.</li>
+            </ul>
+
+            <h3>GAMEPLAY CHANGES</h3>
+            <ul>
+                <li>Clyde now moves randomly if you move too close to him in the Mania Game Style.</li>
+                <li>Removing that one frame delay between glide blocks making everything slower than intended was proving to be very tedious, so unfortunately it's staying in...</li>
+            </ul>
+
+            <h3>INTERNAL CHANGES</h3>
+            <ul>
+                <li>Reworked how Mazes are loaded by integrating them into the decompiler used for importing Custom Mazes.</li>
+                <li>Properly implemented the new jumping algorithms for Pac-Man.</li>
+                <li>I've also changed the code for other stuff in general.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.6.3</h2>
+            <ul>
+                <li>Speed being faster than normal has been fixed. (For real this time)</li>
+                <li>Increased Menu Scroll speed from 0.2 - 0.15.</li>
+                <li>Fixed selection dots being aligned wrong.</li>
+                <li>Made adjustments to certain stuff internally.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.6.2</h2>
+            <p>Fixed speed to not be as off anymore... which didn't work.</p>
+        </div>
+
+        <div>
+            <h2>v2.6.1</h2>
+            <ul>
+                <li>Fixed bottom HUD not showing.</li>
+                <li>Added a version number to the thumbnail.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.6</h2>
+
+            <h3>MENU OVERHAUL!</h3>
+            <p>The whole menu now looks much better, with new features:</p>
+            <ul>
+                <li>Navigation dots that let you see which option you've chosen.</li>
+                <li>Menu Music! (Jakub Koter - Exluna)</li>
+                <li>Added a floating animation for the logo.</li>
+                <li>Added a fading animation for the “Press Space” text.</li>
+                <li>Added back Pac-Man and the Ghosts in the preview.</li>
+            </ul>
+
+            <h3>NEW PRESET: Pac-Man Plus</h3>
+            <p>
+                Featuring a special recolour for Pac-Man's Park,
+                ghost-frightening and maze-hiding invisible fruit
+                and weaker Power Pellets, I hope you enjoy this classic
+                twist on the original Pac-Man!
+            </p>
+
+            <h3>VISUAL CHANGES</h3>
+            <ul>
+                <li>The UI is now back to using Clones. They are more versatile and can render in HD when playing the game in Vanilla Scratch.</li>
+                <li>The Invisible character can now reveal itself on defeat.</li>
+                <li>The Invisible Character had no eat sounds, but now it has a wide variety of funny sounds.</li>
+            </ul>
+
+            
+            <h3>GAMEPLAY CHANGES</h3>
+            <ul>
+                <li>The game now takes a consistent 0.6s pause when Pac-Man eats a ghost rather than waiting for the sound to end.</li>
+                <li>If Miru and/or Sue are above the Ghost House, Blinky will now be positioned to the left.</li>
+                <li>Miru and Punky's AIs have been completely redone to have a much more complex and unpredictable behaviour.</li>
+                <li>Atari Miru's sprites have been redone.</li>
+                <li>A level counter has been added to the Atari Game Style.</li>
+            </ul>
+            
+            <h3>BUG FIXES</h3>
+            <ul>
+                <li>Eating two ghosts at the same time had no pause.</li>
+                <li>Fixed a collision bug when Punky hits Pac-Man while dashing.</li>
+                <li>You could go over the maze in Atari Alleyways.</li>
+            </ul>
+
+            <h3>KNOWN BUGS</h3>
+            <ul>
+                <li>Commons can jump in ghost house after death, leading to strange behaviour.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.5.1</h2>
+            <p>Just fixing some bugs and changing other stuff.</p>
+
+            <h3>RANDOMISATION CHANGES</h3>
+            <ul>
+                <li>End and Start Songs are now randomised in the Randomiser Maze.</li>
+                <li>The Randomiser Maze and the Random Chaos Gamemode will now darken certain options
+                    that are overridden by the randomisation, which are highlighted.</li>
+            </ul>
+
+            <h3>GAMEPLAY CHANGES</h3>
+            <ul>
+                <li>The Commons can no longer jump in Mania Mashup's Block Town and Pac-Man's Park. They can still jump if Pac-Man's park is selected on it's own</li>
+            </ul>
+
+            <h3>OTHER CHANGES</h3>
+            <ul>
+                <li>An easter egg is now easier to access.</li>
+                <li>
+                    In the newgrounds version of the game last update, I accidentally enabled the Green Flag,
+                    Pause Button and Full screen but I'll leave them there lol.
+                </li>
+                <li>Also added the Stop button to the Newgrounds version</li>
+            </ul>
+
+            <h3>BUG FIXES</h3>
+            <ul>
+                <li>Fixed the Cutscenes setting not working properly.</li>
+                <li>The Ready/Game Over text is now positioned correctly in Sandbox Land</li>
+                <li>Fixed the maze staying invisible if Pac-Man dies while that's the case in the Plus Game Style.</li>
+                <li>When the fruit was eaten, the ghost that wasn't frightened by the last Power Pellet wouldn't be frightened by the fruit. This has been fixed.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.5</h2>
+
+            <h3>EARLY ACCESS - Pac-Man Plus Game Style.</h3>
+            <ul>
+                <li>Midway's conversion pack is now available as a gamemode in Pac-Man Scratched!</li>
+                <li>All feedback to make this mode more better and accurate is welcome.</li>
+            </ul>
+
+            <h3>NEW ADDITIONS</h3>
+            <ul>
+                <li>Added the cutscenes for Ms. Pac-Man.</li>
+                <li>Invisible Character - Want a new challenge? You can now hide yourself from yourself. It won't fool the ghosts though.</li>
+                <li>Random Character - Don't know who to play as? Why not a random selection between everyone except Invisible.</li>
+            </ul>
+
+            <h3>BUG FIXES</h3>
+            <ul>
+                <li>Punky's jump system has been reworked to fix wall targetting.</li>
+                <li>Punky can no longer attack Funky while he is frightened or defeated.</li>
+            </ul>
+
+            <h3>KNOWN BUGS</h3>
+            <ul>
+                <li>Input Delay</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.4.2</h2>
+            <ul>
+                <li>Fixed the Giant Dot Eating sounds not playing.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.4.1</h2>
+            <ul>
+                <li>Fixed a fruit bug in a "random" secret. :)</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.4</h2>
+
+            <h3>NEW ADDITIONS</h3>
+            <ul>
+                <li>CUTSCENES - There's now the option to enable them or play remastered versions of them which has a fresh look.</li>
+                <li>MOBILE CONTROLS - This should make Pac-Man Scratched more playable.</li>
+            </ul>
+
+            <h3>GAMEPLAY CHANGES</h3>
+            <ul>
+                <li>Made some changes to how speed works to improve accuracy. The game should go much faster now.</li>
+                <li>Speeds are now slightly different across the Jr. Pac-Man and Atari Game Styles.</li>
+                <li>After completing the Pink Jungly Steps, Mania Mashup now only loops between Sandbox Land and Jungly Steps.</li>
+            </ul>
+
+            <h3>VISUAL CHANGES</h3>
+            <ul>
+                <li>Changed Crazy Otto's Life icon to be more accurate.</li>
+                <li>Reworked the Dot sounds to now be aligned with how fast Pac-Man is moving.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.3.3</h2>
+            <p>Fixed Punky having bugged movement after jumping.</p>
+        </div>
+
+        <div>
+            <h2>v2.3.2</h2>
+            <p>Fixed the Dot Shape option not working.</p>
+        </div>
+
+        <div>
+            <h2>v2.3.1</h2>
+            <ul>
+                <li>Pac-Man's cornering now works closer to the original game.</li>
+                <li>Readjusted the speeds again to be more accurate.</li>
+                <li>Fruit speed and bouncing should be more accurate now.</li>
+                <li>Reworded the Aggressive Blinky description to be easier to understand.</li>
+                <li>Added a new description for Random Chaos.</li>
+                <li>
+                    Reworked many of the game's mechanics such as the movement of ghosts and Pac-Man movement
+                    for smoother and less buggy performance.
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>v2.3</h3>
+
+            <h2>THUMBNAIL UPDATE!</h2>
+            <p>New thumbnail just dropped!</p>
+            
+            <h2>NEW ADDITIONS</h2>
+            <ul>
+                <li>RANDOM CHAOS - A new gamemode that replaces the original Random preset. Embrace the chaos!</li>
+                <li>
+                    RANDOMISER MAZE - All mazes and their colour palletes are randomly shuffled to create a
+                    different experience per level. Works best with the Random Chaos gamemode.
+                </li>
+                <li>STARTING LEVEL - Need a headstart or some practice? This new setting gives you a headstart to one of the first 25 levels.</li>
+                <li>GHOST NOISE SETTING - Ghost noises being annoying? Now you can turn them off if you wish.</li>
+            </ul>
+
+            <h2>SETTINGS CHANGES</h2>
+            <p>Made some changes to the Settings menu.</p>
+            <ul>
+                <li>The Press Space to Start text has been moved to the top, removing clutter.</li>
+                <li>All the options are no longer shown at once and instead, scroll.</li>
+                <li>Holding down left and right now scrolls across all of the options in a setting.</li>
+                <li>
+                    To save some annoyance, presets no longer change the following options:
+                    <ul>
+                        <li>Gamemode</li>
+                        <li>Game Speed</li>
+                        <li>Starting Lives</li>
+                        <li>Starting Level</li>
+                        <li>Extend Threshold</li>
+                    </ul>
+                </li>
+                <li>Replaced the Random Preset with The Randomiser Maze and the Random Chaos Gamemode, like I said above.</li>
+            </ul>
+
+            <h2>GAMEPLAY CHANGES</h2>
+            <ul>
+                <li>Punky has changed some of his tricks this update! Find them all yourself.</li>
+                <li>Completely reworked how Speed functions in Pac-Man Scratched.
+                    <ul>
+                        <li>Completely reworked how Speed functions in Pac-Man Scratched.The game speed should be more accurate to the original game as before it was a bit slower.</li>
+                        <li>The Frightened and Aggressive Blinky speeds may not be accurate so please give feedback on how to fix this.</li>
+                    </ul>
+                </li>
+                <li>The Ghost House's functionality has been completely reworked to make it more accurate to the original game.</li>
+                <li>Fruit Collision has been improved.</li>
+            </ul>
+            
+            <h2>VISUAL CHANGES</h2>
+            <ul>
+                <li>Miru now has new Atari sprites!</li>
+                <li>Added Game Over jingles for the music.</li>
+                <li>
+                    The level completion jingle in Miru's Tunes has been replaced with Super Pac-Man's
+                    level clear jingle. The old music is now the game over jingle for that track.
+                </li>
+                <li>Funky's eyes are green when Punky defeats him to improve visibility.</li>
+                <li>Changed the sound for when Funky gets defeated by Punky too.</li>
+                <li>Added new ghost sirens for the Atari and Mania Game Styles. (You can turn them off ofc.)</li>
+            </ul>
+
+            <p>Most importantly, Bugfixes</p>
+        </div>
+        
+        <div>
+            <h2>v2.2</h2>
+            <h3>NEW ADDITIONS</h3>
+            <ul>
+                <li>
+                    PUNKY'S REVENGE - In this gamemode, Punky is back and he isn't happy about being
+                    left out and only showing up as part of a collaboration. (That Tim broke)
+                    In this gamemode, you'll have to face him instead of the four ghosts, he's full
+                    of surprises to make upfor the lack of numbers.
+                </li>
+                <li>
+                    MANIA MASHUP - Ready to test your wits? This new maze option has three new, challenging mazes
+                    (+ Pac-Man's Park) that will test your skills. This maze will also be part of the Pac-Mania
+                    preset rather than Pac-Man's Park.
+                </li>
+            </ul>
+
+            <h3>GAMEPLAY CHANGES</h3>
+            <ul>
+                <li>Large Dot slowdown has been nerfed.</li>
+                <li>Fruit speed is now slower.</li>
+            </ul>
+
+            <h3>MUSIC CHANGES</h3>
+            <ul>
+                <li>Rally X, Dug Naissance and Mappy's Mixtape all have their own level start and clear sounds.</li>
+                <li>The opening jingle for Pac & Pal is now tied to the Miru's Gardens theme.</li>
+                <li>The Pac-Mania applause is now tied to the Pac-Mania soundtracks.</li>
+                <li>Dug Naissance now stops when Pac-Man stops moving.</li>
+            </ul>
+
+            <h3>PERFORMANCE CHANGES</h3>
+            <ul>
+                <li>The game is now faster at 30FPS to help close the speed difference between 30 FPS and 60 FPS Pac-Man Scratched. (Game gets slower at lower framerates)</li>
+                <li>Thanks to some new magic, I gave the performance the massive boost it finally needed.</li>
+                <li>The fruits and special items no longer overlap.</li>
+                <li>Various Bugfixes, including Juniour Jumble’s maze loading being bugged.</li>
+            </ul>
+
+            <h3>OTHER CHANGES</h3>
+            <ul>
+                <li>Watcher's Way has gotten it's colours adjusted.</li>
+                <li>The Blinky/Clyde error has been reworked to “Clyde Swap.” Clyde can now be swapped with Sue or Tim.</li>
+            </ul>
+
+            <p>Also, do NOT try this game at 45 FPS.</p>
+        </div>
+
+        <div>
+            <h2>v2.1.1</h2>
+            <ul>
+                <li>Fixed special items spawning incorrectly.</li>
+                <li>Fixed game pauses having an inconsistent delay.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>v2.1</h2>
+            
+            <h3>NEW MUSIC!</h3>
+            <p>Three new tracks have been added from three Namco classics!</p>
+            <ul>
+                <li>RALLY X: The main theme from Rally X</li>
+                <li>DUG NAISSANCE: The main theme from Dig Dug</li>
+                <li>MAPPY'S MIXTAPE: The main theme from Mappy</li>
+            </ul>
+            <p>Note: These names are not official, I made them up because I didn't want to name them “Mappy Main Theme” for example.</p>
+            
+            <h3>GAMEPLAY CHANGES</h3>
+            <ul>
+                <li>After so long, the fruit is now able to move in the Ms. Pac-Man and Jr. Pac-Man Game Styles!</li>
+                <li>The fruits will now spawn after a set amount of dots have been eaten, they no longer rely on percentages.</li>
+                <li>On larger mazes, more than two fruits can spawn now.</li>
+                <li>
+                    Ghosts will no longer slow down when entering and exiting tunnels in the Ms. Pac-Man Game Style after level 3
+                    and at all in the Jr. Pac-Man and Atari Game Styles.
+                </li>
+                <li>Miru will no longer turn around when the other ghosts do so.</li>
+            </ul>
+
+            <h3>AESTHETIC CHANGES</h3>
+            <ul>
+                <li>Some music tracks have been toned down in volume.</li>
+                <li>Playing in the Atari Game Style will now replace the ghosts with “Tod.”</li>
+                <li>Changed Blinky’s reaction to Pac-Man jumping to show more personality.</li>
+                <li>
+                    Sue’s half-closed eyes have been added to her main design instead of being
+                    limited to her jump reaction sprite. Her eyelids are also made darker.
+                </li>
+                <li>
+                    In the Atari Game Style, the font used to display scores has been changed to
+                    use the Atari font and has also been recoloured.
+                </li>
+                <li>Added credits to Bandai Namco, GCC and AtGames in the main menu.</li>
+            </ul>
+
+            <p>And of course, bugfixes.</p>
+        </div>
+
+        <div>
+            <h2>v2.0</h2>
+            <p>MAJOR UPDATE! WE HIT THE TWO OH!</p>
+            <p>We got lots of Pac-Mania related content this update!</p>
+
+            <h3>NEW ADDITIONS</h3>
+            <ul>
+                <li>
+                    PAC MANIA GAME STYLE - Sue and the Commons have joined the Ghost party!
+                    Now you'll have to deal with them when clearing mazes.
+                    <ul>
+                        <li>Sue and Funky will constantly chase the player.</li>
+                        <li>Spunky will chase Pac-Man and scatter towards the top right
+                            corner in a similar manner to Blinky, except she doesn't
+                            become aggressive when there are a few dots left though.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>MENU REDESIGN</h3>
+            <ul>
+                <li>
+                    The menu has been fully reworked! Now all of the settings are on the
+                    left in one massive menu with the Maze preview and a description of
+                    the selected setting on the right.
+                </li>
+                <li>
+                    Unfortunately, I removed the mouse controls and reduced the Maze preview
+                    to just the Maze itself. They were a bit much of a hassle to keep.
+                </li>
+            </ul>
+
+            <h3>NEW SETTINGS</h3>
+            <ul>
+                <li>
+                    MUSIC - You can now listen to your favourite tunes from Pac-Mania or Pac & Pal during gameplay. You can even let the maze automatically decide what mania music should be played through the “Auto” option.
+                    New settings now include Music and Ability.
+                </li>
+                <li>ABILITY - You can now make Pac-Man jump or speed up by pressing the Spacebar.</li>
+                <li>PRESET - This will automatically set everything up for you if you just want to go in and play the classics.</li>
+            </ul>
+
+            <h3>SETTING CHANGES</h3>
+            <ul>
+                <li>Bonus Life Threshold has been renamed to Extend Threshold and now has the option to get a bonus life every 5K, 50K, 100K or 150K points.</li>
+                <li>Elroy Indicator has been reworked as Aggressive Blinky for easier understanding. There is now an option to disable this mode entirely.</li>
+                <li>Pinky/Inky offset bug has been renamed to just “Offset Bug” to include any future ghosts that may use an offset target tile.</li>
+            </ul>
+
+            <h3>GAMEPLAY CHANGES</h3>
+            <ul>
+                <li>Frightened ghosts have slowed down. This should hopefully allow you to rack up a large chomp streak easier.</li>
+                <li>If Pac-Man hasn't eaten a dot for 4 seconds, a ghost will exit the ghost house if there are any still in there.</li>
+                <li>Added music for every maze.</li>
+            </ul>
+
+            <h3>INTERNAL CHANGES</h3>
+            <ul>
+                <li>Separated the X and Y values to allow jumping.</li>
+                <li>The Fruit is now built into the Entities Sprite and the Scatter/Chase algorithm is also built into the Tile Sprite. This means that the game now has two fewer sprites.</li>
+            </ul>
+            
+            <p>And of course, there are bugfixes.</p>
+
+        </div>
+    </body>
+</html>
