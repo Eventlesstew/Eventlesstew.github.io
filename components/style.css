@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'calibri';
+    src: url('/fonts/calibri-regular.ttf');
+}
+
+@font-face {
+    font-family: 'minercraftory';
+    src: url('/fonts/Minercraftory.ttf');
+}
+
+* {
+    font-family: "calibri";
+}
+
+h1.headerTitle {
+    font-family: 'minercraftory';
+    color:rgb(162, 0, 255);
+    text-align:center;
+}
+
+div.gui {
+    background-color: rgb(54, 77, 101);
+    top: 0;
+    position: sticky;
+    align-content: start;
+    justify-content: center;
+}
