@@ -12,7 +12,27 @@
     font-family: "calibri";
 }
 
+body {
+    margin: 0px;
+}
+
+.header {
+    background-color: rgb(61, 61, 61);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header * {
+    margin: 0px;
+}
+
 h1.headerTitle {
+    font-family: 'minercraftory';
+    color:rgb(162, 0, 255);
+    text-align:center;
+}
+
+p.headerCaption {
     font-family: 'minercraftory';
     color:rgb(162, 0, 255);
     text-align:center;

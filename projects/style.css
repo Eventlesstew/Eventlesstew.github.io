@@ -1,0 +1,37 @@
+:root {
+    --projectPanelWidth:calc((100vw/3) - 16px);
+}
+.projectContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.projectContainer div {
+    width: var(--projectPanelWidth);
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    margin:4px;
+}
+
+.projectContainer div * {
+    width: calc(var(--projectPanelWidth)*0.9);
+    margin-left: calc(var(--projectPanelWidth)*0.05);
+    margin-right: calc(var(--projectPanelWidth)*0.05);
+    margin-top:0;
+}
+
+.projectContainer div h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.projectContainer div iframe {
+    text-align: center;
+}
+
+.projectEmbed_4_3 {
+    height: calc(var(--projectPanelWidth)*0.9*0.75);
+}
+
+.projectEmbed_16_9 {
+    height: calc(var(--projectPanelWidth)*0.9*(9/16));
+}
