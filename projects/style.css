@@ -1,22 +1,36 @@
 :root {
-    --projectPanelWidth:calc((100vw/3) - 16px);
+    --projectBorder:0.25em;
+    --projectMargin:0.5em;
+    --projectPadding:1em;
+    --projectPanelWidth:calc((100vw/3) - (var(--projectMargin)*4) - (var(--projectBorder)*2));
 }
+
+.projectTitle {
+    font-size:25pt;
+    font-family: 'minercraftory';
+    text-align: center;
+    padding-left: var(--projectMargin);
+    margin-left: var(--projectMargin);
+    padding-right: var(--projectMargin);
+    margin-right: var(--projectMargin);
+}
+
 .projectContainer {
   display: grid;
   grid-template-columns: auto auto auto;
+  padding-left:var(--projectMargin);
+  padding-right:var(--projectMargin);
 }
 .projectContainer .projectBox {
     width: var(--projectPanelWidth);
     height: calc(var(--projectPanelWidth) * (4/3));
     background-color: #f1f1f1;
-    border: 1px solid black;
-    margin:4px;
+    border: var(--projectBorder) solid black;
+    margin:var(--projectMargin);
 }
 
 .projectContainer .projectBox * {
     width: calc(var(--projectPanelWidth)*0.9);
-    margin-left: calc(var(--projectPanelWidth)*0.05);
-    margin-right: calc(var(--projectPanelWidth)*0.05);
     margin-top:0;
 }
 
