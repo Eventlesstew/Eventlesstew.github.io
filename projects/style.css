@@ -2,7 +2,7 @@
     --projectBorder:0.25em;
     --projectMargin:0.5em;
     --projectPadding:1em;
-    --projectPanelWidth:calc((100vw/3) - (var(--projectMargin)*4) - (var(--projectBorder)*2));
+    --projectPanelWidth:calc(max(20em, (100vw/3) - (var(--projectMargin)*4) - (var(--projectBorder)*2) - (var(--projectPadding)*2)));
 }
 
 .projectTitle {
@@ -16,10 +16,12 @@
 }
 
 .projectContainer {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding-left:var(--projectMargin);
-  padding-right:var(--projectMargin);
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
+    padding-left:var(--projectMargin);
+    padding-right:var(--projectMargin);
 }
 .projectContainer .projectBox {
     width: var(--projectPanelWidth);
@@ -27,16 +29,13 @@
     background-color: #f1f1f1;
     border: var(--projectBorder) solid black;
     margin:var(--projectMargin);
+    padding-left:var(--projectPadding);
+    padding-right:var(--projectPadding);
+    text-align: center;
 }
 
 .projectContainer .projectBox * {
-    width: calc(var(--projectPanelWidth)*0.9);
-    margin-top:0;
-}
-
-.projectContainer .projectBox a {
-    margin-left:0;
-    margin-right:0;
+    text-align: left;
 }
 
 .projectContainer .projectBox h3 {
@@ -46,13 +45,14 @@
 }
 
 .projectContainer div iframe {
-    text-align: center;
+    height:calc(var(--projectPanelWidth)*(4/3)*(1/3));
+    margin:auto;
 }
 
 .projectEmbed_4_3 {
-    height: calc(var(--projectPanelWidth)*0.9*(3/4));
+    width:calc(var(--projectPanelWidth)*(4/3)*(1/3)*(4/3));
 }
 
 .projectEmbed_16_9 {
-    height: calc(var(--projectPanelWidth)*0.9*(9/16));
+    width:calc(var(--projectPanelWidth)*(4/3)*(1/3)*(16/9));
 }
